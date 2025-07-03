@@ -1,1 +1,36 @@
-export class User {}
+import { Prop } from '@nestjs/mongoose';
+
+export class User {
+  @Prop()
+  name: string;
+
+  @Prop()
+  email: string;
+
+  @Prop()
+  password: string;
+
+  @Prop()
+  phone: string;
+
+  @Prop()
+  address: string;
+
+  @Prop()
+  image: string;
+
+  @Prop({ default: 'USERS' })
+  role: string;
+
+  @Prop({ default: 'LOCAL' })
+  accountType: string;
+
+  @Prop({ default: false })
+  isActive: boolean;
+
+  @Prop()
+  codeId: string;
+
+  @Prop()
+  codeExpired: Date;
+}
