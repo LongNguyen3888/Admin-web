@@ -4,6 +4,7 @@ import { UpdateMenuDto } from './dto/update-menu.dto';
 
 @Injectable()
 export class MenusService {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   create(createMenuDto: CreateMenuDto) {
     return 'This action adds a new menu';
   }
@@ -16,6 +17,7 @@ export class MenusService {
     return `This action returns a #${id} menu`;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   update(id: number, updateMenuDto: UpdateMenuDto) {
     return `This action updates a #${id} menu`;
   }
